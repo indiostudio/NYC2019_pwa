@@ -1,0 +1,17 @@
+{
+  "name": "Missão NYC 2019",
+  "short_name": "NYC 2019",
+  "theme_color": "#0d103b",
+  "background_color": "#0d103b",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "images/icon_app.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

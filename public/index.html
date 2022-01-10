@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br" manifest="offline.manifest">
+<head>
+    <meta charset="UTF-8">
+    <title>Missão NYC 2019</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/tabelas.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <script type="text/javascript" src="rodar_manifest.js"></script>
+    <link rel="manifest" href="app.manifest">
+    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="offline.manifest">
+    <link rel="manifest" href="offline.json">
+    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="rodar_manifest.js">
+    <link rel="apple-touch-icon" href="images/icon_app.png">
+    <script src="plugins/owl.carousel.min.js"></script>
+    <script src="plugins/jquer.js"></script>
+<script>
+// Check that service workers are registered
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js');
+  });
+}
+</script>
+</head>
+
+<body class="esconder_scroll">
+    <header class="cabecalho">
+        <h1 class="cabecalho-logo">
+            <img src="images/logo.png" id="logo">
+        </h1>
+    </header>
+    <main class="body">
+        <div class="tabela_caixa">
+            <table class="tabela_modulos">
+                <tr>
+                    <td>
+                        <a href="pages/sobre_evento.html">
+                            <img src="images/sobre_evento.png" class="tabela_icone">
+                            <p class="tabela_texto">Sobre o evento</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="pages/dicas_viagem.html">
+                            <img src="images/dicas_viagem.png" class="tabela_icone">
+                            <p class="tabela_texto">Dicas de Viagem</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="pages/agenda_evento.html">
+                            <img src="images/agenda_evento.png" class="tabela_icone">
+                            <p class="tabela_texto">Agenda do Evento</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://api.whatsapp.com/send?phone=5511913131232&text=Ol%C3%A1!%20Gostaria%20de%20contratar%20seus%20servi%C3%A7os" target="_top">
+                            <img src="images/chat.png" class="tabela_icone">
+                            <p class="tabela_texto">Chat</p>
+                        </a>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="pages/vts.html">
+                            <img src="images/vts.png" class="tabela_icone">
+                            <p class="tabela_texto">Visitas Técnicas</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="pages/equipe_apoio.html">
+                            <img src="images/equipe_apoio.png" class="tabela_icone">
+                            <p class="tabela_texto">Equipe de Apoio</p>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://maps.google.com/" target="_blank">
+                            <img src="images/local_evento.png" class="tabela_icone" id="local_evento">
+                            <p class="tabela_texto">Local do Evento</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <div class="logo_posicao">
+            <img src="images/bg.png" class="logo">
+            </div>
+        </div>
+    <div id="modal">
+       <div class="modal-overlay"></div>
+        <div class="modal-body">
+            <div class="modal_title">Atenção!</div>
+            <div class="modal_text">Você está utilizando uma Progressive Web App. Caso essa seja a primeira vez que esteja utilizando essa aplicação, vá até as configurações do seu navegador e selecione a opção "Adicionar à tela inicial".</div>
+            <div class="modal_text"><input id="aceiteHome" type="checkbox"><label for="aceiteHome">Não mostrar novamente</label></div>
+            <div class="ok"><button type="button" class="botao">Ok</button></div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
